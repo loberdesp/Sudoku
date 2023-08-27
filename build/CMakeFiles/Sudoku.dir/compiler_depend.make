@@ -331,13 +331,8 @@ CMakeFiles/Sudoku.dir/functions.cpp.o: ../functions.cpp \
   /usr/include/SDL2/SDL_version.h \
   /usr/include/SDL2/SDL_locale.h \
   /usr/include/SDL2/SDL_misc.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  ../field.h \
-  ../board.h
+  ../game.h \
+  ../game.cpp
 
 CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
@@ -669,22 +664,12 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
   /usr/include/SDL2/SDL_version.h \
   /usr/include/SDL2/SDL_locale.h \
   /usr/include/SDL2/SDL_misc.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  ../field.h \
-  ../board.h
+  ../game.h
 
 
 ../main.cpp:
 
-../board.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/vector:
+../game.h:
 
 /usr/include/SDL2/SDL_locale.h:
 
@@ -693,8 +678,6 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
 /usr/include/SDL2/SDL_metal.h:
 
 /usr/include/SDL2/SDL_messagebox.h:
-
-/usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/SDL2/SDL_hidapi.h:
 
@@ -817,8 +800,6 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
 /usr/include/SDL2/SDL_gamecontroller.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -948,8 +929,6 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/c++/11/bits/vector.tcc:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -975,6 +954,8 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
+
+../game.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -1309,8 +1290,6 @@ CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
-
-../field.h:
 
 /usr/include/c++/11/type_traits:
 
