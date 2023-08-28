@@ -37,7 +37,10 @@ void Game::handleEvents() {
     switch(event.type) {
         case SDL_QUIT:
             isRunning = false;
-            break;
+        break;
+        case SDL_MOUSEMOTION:
+            getMouse(&mouseX,&mouseY);
+        break;
         default:
             break;
     }
@@ -63,6 +66,12 @@ void Game::clean() {
 
 
 
+
+
+
+
+//DRAWING GAME GRID
+
 void Game::newLine(bool orientation, int pos, int i) {
     if(orientation) {
         SDL_RenderDrawLine(renderer, pos+i, 0, pos+i, WINDOW_SIZE);
@@ -70,7 +79,6 @@ void Game::newLine(bool orientation, int pos, int i) {
         SDL_RenderDrawLine(renderer, 0, pos+i, WINDOW_SIZE, pos+i);
     }
 }
-
 
 void Game::drawLine(bool orientation, bool bold, int pos) {
     int i=0;
@@ -93,4 +101,16 @@ void Game::drawNet() {
             }
         }
     }
+}
+
+
+
+
+
+
+//CURRENT SQUARE HIGHLIGHT
+
+void Game::getMouse(int *x, int *y) {
+    SDL_GetMouseState(x, y);
+    std::cout << *x << ":" << *y << std::endl;
 }

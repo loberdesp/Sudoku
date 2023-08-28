@@ -12,6 +12,7 @@ class Game {
         void clean();
 
         bool running() { return isRunning; }
+        void getMouse(int *x, int *y);
 
         void newLine(bool orientation, int pos, int i);
         void drawLine(bool orientation, bool bold, int pos);
@@ -19,6 +20,7 @@ class Game {
 
     private:
         bool isRunning;
+        int mouseX, mouseY;
         SDL_Window *window;
         SDL_Renderer *renderer;
 
