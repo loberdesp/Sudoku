@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Sudoku.dir/main.cpp.o CMakeFiles/Sudoku.dir/functions.cpp.o -o Sudoku  -lSDL2 -lSDL2_image 
+/usr/bin/g++ -g CMakeFiles/Sudoku.dir/main.cpp.o CMakeFiles/Sudoku.dir/functions.cpp.o -o Sudoku  -lSDL2 -lSDL2_image 

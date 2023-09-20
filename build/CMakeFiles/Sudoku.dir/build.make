@@ -73,29 +73,29 @@ CMakeFiles/Sudoku.dir/main.cpp.o: CMakeFiles/Sudoku.dir/flags.make
 CMakeFiles/Sudoku.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Sudoku.dir/main.cpp.o: CMakeFiles/Sudoku.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Sudoku.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/main.cpp.o -MF CMakeFiles/Sudoku.dir/main.cpp.o.d -o CMakeFiles/Sudoku.dir/main.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/main.cpp.o -MF CMakeFiles/Sudoku.dir/main.cpp.o.d -o CMakeFiles/Sudoku.dir/main.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp
 
 CMakeFiles/Sudoku.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sudoku.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp > CMakeFiles/Sudoku.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp > CMakeFiles/Sudoku.dir/main.cpp.i
 
 CMakeFiles/Sudoku.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp -o CMakeFiles/Sudoku.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp -o CMakeFiles/Sudoku.dir/main.cpp.s
 
 CMakeFiles/Sudoku.dir/functions.cpp.o: CMakeFiles/Sudoku.dir/flags.make
 CMakeFiles/Sudoku.dir/functions.cpp.o: ../functions.cpp
 CMakeFiles/Sudoku.dir/functions.cpp.o: CMakeFiles/Sudoku.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sudoku.dir/functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/functions.cpp.o -MF CMakeFiles/Sudoku.dir/functions.cpp.o.d -o CMakeFiles/Sudoku.dir/functions.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/functions.cpp.o -MF CMakeFiles/Sudoku.dir/functions.cpp.o.d -o CMakeFiles/Sudoku.dir/functions.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp
 
 CMakeFiles/Sudoku.dir/functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sudoku.dir/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp > CMakeFiles/Sudoku.dir/functions.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp > CMakeFiles/Sudoku.dir/functions.cpp.i
 
 CMakeFiles/Sudoku.dir/functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp -o CMakeFiles/Sudoku.dir/functions.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp -o CMakeFiles/Sudoku.dir/functions.cpp.s
 
 # Object files for target Sudoku
 Sudoku_OBJECTS = \

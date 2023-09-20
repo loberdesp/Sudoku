@@ -38,20 +38,23 @@ void Game::handleEvents() {
         case SDL_QUIT:
             isRunning = false;
         break;
-        case SDL_MOUSEMOTION:
-            getMouse(&mouseX,&mouseY);
+        case SDL_MOUSEBUTTONDOWN:
+            std::cout << "klik" << std::endl;
         break;
         default:
-            break;
+        break;
     }
 }
 
 void Game::update() {
+    getMouse(&mouseX,&mouseY);
+    calcSquare();
 }
 
 void Game::render() {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderClear(renderer);
+    drawHighlight();
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
     drawNet();
     SDL_RenderPresent(renderer);
@@ -112,5 +115,26 @@ void Game::drawNet() {
 
 void Game::getMouse(int *x, int *y) {
     SDL_GetMouseState(x, y);
-    std::cout << *x << ":" << *y << std::endl;
+}
+
+bool Game::isMouseinCurrSquare() {
+    if(mouseX >= r.x && mouseX <= r.x+SQUARE_SIZE && mouseY >= r.y && mouseY <= r.y+SQUARE_SIZE) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+void Game::calcSquare() {
+    if(isMouseinCurrSquare()==false) {
+        r.x = std::floor(mouseX/double(SQUARE_SIZE))*SQUARE_SIZE;
+        r.y = std::floor(mouseY/double(SQUARE_SIZE))*SQUARE_SIZE;
+    }
+}
+
+void Game::drawHighlight() {
+    r.w = SQUARE_SIZE;                      //to wywalic do jakiegos konstruktora bo nie co zeby to sie w kazdym updacie robilo
+    r.h = SQUARE_SIZE;
+    SDL_SetRenderDrawColor( renderer, 255, 0, 0, 255 );
+    SDL_RenderFillRect( renderer, &r );
 }
