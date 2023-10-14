@@ -215,6 +215,9 @@ SDL2:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2.so
 SDL2_image:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_image.so
 
 //Path to a library.
+SDL2_ttf:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
+
+//Path to a library.
 SDL2main:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2main.a
 
 //Value Computed by CMake

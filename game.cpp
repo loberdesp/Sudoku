@@ -1,3 +1,10 @@
+#include "game.h"
+#include "TextureManager.h"
+
+SDL_Texture *txt;
+SDL_Rect srcR, destR;
+TextureManager txtManager;
+
 Game::Game() {
 
 }
@@ -29,6 +36,10 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
     } else {
         isRunning = false;
     }
+
+    txtManager.loadAllTxt();
+    txt = txtManager.LoadTexture("../assets/txt.png", renderer);
+    
 }
 
 void Game::handleEvents() {
@@ -47,16 +58,15 @@ void Game::handleEvents() {
 }
 
 void Game::update() {
-    getMouse(&mouseX,&mouseY);
-    calcSquare();
+    destR.h = 100;
+    destR.w = 100;
+    srcR.h = 16;
+    srcR.w = 16;
 }
 
 void Game::render() {
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
     SDL_RenderClear(renderer);
-    drawHighlight();
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-    drawNet();
+    SDL_RenderCopy(renderer, txt, &srcR, &destR);
     SDL_RenderPresent(renderer);
 }
 
@@ -65,76 +75,4 @@ void Game::clean() {
     SDL_DestroyRenderer(renderer);
     SDL_Quit();
     std::cout << "Game cleaned!" << std::endl;
-}
-
-
-
-
-
-
-
-//DRAWING GAME GRID
-
-void Game::newLine(bool orientation, int pos, int i) {
-    if(orientation) {
-        SDL_RenderDrawLine(renderer, pos+i, 0, pos+i, WINDOW_SIZE);
-    } else {
-        SDL_RenderDrawLine(renderer, 0, pos+i, WINDOW_SIZE, pos+i);
-    }
-}
-
-void Game::drawLine(bool orientation, bool bold, int pos) {
-    int i=0;
-    if(bold) {
-        for(i=-1;i<2;i++) {
-            newLine(orientation, pos, i);
-        }
-    } else {
-        newLine(orientation, pos, i);
-    }
-}
-
-void Game::drawNet() {
-    for(int i=0;i<2;i++) {
-        for(int j=0;j<WINDOW_SIZE/10;j++) {
-            if(j%3==0) {
-                drawLine(i, 1, j*WINDOW_SIZE/9);
-            } else {
-                drawLine(i, 0, j*WINDOW_SIZE/9);
-            }
-        }
-    }
-}
-
-
-
-
-
-
-//CURRENT SQUARE HIGHLIGHT
-
-void Game::getMouse(int *x, int *y) {
-    SDL_GetMouseState(x, y);
-}
-
-bool Game::isMouseinCurrSquare() {
-    if(mouseX >= r.x && mouseX <= r.x+SQUARE_SIZE && mouseY >= r.y && mouseY <= r.y+SQUARE_SIZE) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-void Game::calcSquare() {
-    if(isMouseinCurrSquare()==false) {
-        r.x = std::floor(mouseX/double(SQUARE_SIZE))*SQUARE_SIZE;
-        r.y = std::floor(mouseY/double(SQUARE_SIZE))*SQUARE_SIZE;
-    }
-}
-
-void Game::drawHighlight() {
-    r.w = SQUARE_SIZE;                      //to wywalic do jakiegos konstruktora bo nie co zeby to sie w kazdym updacie robilo
-    r.h = SQUARE_SIZE;
-    SDL_SetRenderDrawColor( renderer, 255, 0, 0, 255 );
-    SDL_RenderFillRect( renderer, &r );
 }

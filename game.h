@@ -1,8 +1,19 @@
+#pragma once
+
+
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_image.h"
+#include <iostream>
+#include <vector>
+
+
+
 class Game {
 
     public:
         Game();
         ~Game();
+
 
         void init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
 
@@ -11,24 +22,17 @@ class Game {
         void render();
         void clean();
 
-        bool running() { return isRunning; }
-        void getMouse(int *x, int *y);
-        bool isMouseinCurrSquare();
-        void calcSquare();
 
-        void newLine(bool orientation, int pos, int i);
-        void drawLine(bool orientation, bool bold, int pos);
-        void drawNet();
-        void drawHighlight();
+        bool running() { return isRunning; }
+
+
 
     private:
-        bool isRunning;
-        int mouseX, mouseY;
-        int currSquareX, currSquareY;
-        SDL_Rect r;
 
+        bool isRunning;
 
         SDL_Window *window;
         SDL_Renderer *renderer;
+
 
 };

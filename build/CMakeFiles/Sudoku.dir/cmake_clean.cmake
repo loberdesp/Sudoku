@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Sudoku.dir/functions.cpp.o"
-  "CMakeFiles/Sudoku.dir/functions.cpp.o.d"
+  "CMakeFiles/Sudoku.dir/TextureManager.cpp.o"
+  "CMakeFiles/Sudoku.dir/TextureManager.cpp.o.d"
+  "CMakeFiles/Sudoku.dir/game.cpp.o"
+  "CMakeFiles/Sudoku.dir/game.cpp.o.d"
   "CMakeFiles/Sudoku.dir/main.cpp.o"
   "CMakeFiles/Sudoku.dir/main.cpp.o.d"
   "Sudoku"

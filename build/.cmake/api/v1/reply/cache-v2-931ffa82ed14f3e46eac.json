@@ -1146,6 +1146,18 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libSDL2_image.so"
 		},
 		{
+			"name" : "SDL2_ttf",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libSDL2_ttf.so"
+		},
+		{
 			"name" : "SDL2main",
 			"properties" : 
 			[

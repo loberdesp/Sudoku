@@ -6,7 +6,12 @@
 },
 {
   "directory": "/home/psiembab/Desktop/bmwe36/Sudoku/build",
-  "command": "/usr/bin/g++   -g -Wall -Wextra -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wmaybe-uninitialized -std=gnu++14 -o CMakeFiles/Sudoku.dir/functions.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp",
-  "file": "/home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp"
+  "command": "/usr/bin/g++   -g -Wall -Wextra -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wmaybe-uninitialized -std=gnu++14 -o CMakeFiles/Sudoku.dir/game.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/game.cpp",
+  "file": "/home/psiembab/Desktop/bmwe36/Sudoku/game.cpp"
+},
+{
+  "directory": "/home/psiembab/Desktop/bmwe36/Sudoku/build",
+  "command": "/usr/bin/g++   -g -Wall -Wextra -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wmaybe-uninitialized -std=gnu++14 -o CMakeFiles/Sudoku.dir/TextureManager.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/TextureManager.cpp",
+  "file": "/home/psiembab/Desktop/bmwe36/Sudoku/TextureManager.cpp"
 }
 ]

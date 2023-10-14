@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/Sudoku.dir/main.cpp.o CMakeFiles/Sudoku.dir/functions.cpp.o -o Sudoku  -lSDL2 -lSDL2_image 
+/usr/bin/g++ -g CMakeFiles/Sudoku.dir/main.cpp.o CMakeFiles/Sudoku.dir/game.cpp.o CMakeFiles/Sudoku.dir/TextureManager.cpp.o -o Sudoku  -lSDL2 -lSDL2_image -lSDL2_ttf 

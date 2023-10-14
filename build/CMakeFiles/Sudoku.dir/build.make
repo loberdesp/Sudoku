@@ -83,33 +83,49 @@ CMakeFiles/Sudoku.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/main.cpp -o CMakeFiles/Sudoku.dir/main.cpp.s
 
-CMakeFiles/Sudoku.dir/functions.cpp.o: CMakeFiles/Sudoku.dir/flags.make
-CMakeFiles/Sudoku.dir/functions.cpp.o: ../functions.cpp
-CMakeFiles/Sudoku.dir/functions.cpp.o: CMakeFiles/Sudoku.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sudoku.dir/functions.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/functions.cpp.o -MF CMakeFiles/Sudoku.dir/functions.cpp.o.d -o CMakeFiles/Sudoku.dir/functions.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp
+CMakeFiles/Sudoku.dir/game.cpp.o: CMakeFiles/Sudoku.dir/flags.make
+CMakeFiles/Sudoku.dir/game.cpp.o: ../game.cpp
+CMakeFiles/Sudoku.dir/game.cpp.o: CMakeFiles/Sudoku.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sudoku.dir/game.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/game.cpp.o -MF CMakeFiles/Sudoku.dir/game.cpp.o.d -o CMakeFiles/Sudoku.dir/game.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/game.cpp
 
-CMakeFiles/Sudoku.dir/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sudoku.dir/functions.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp > CMakeFiles/Sudoku.dir/functions.cpp.i
+CMakeFiles/Sudoku.dir/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sudoku.dir/game.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/game.cpp > CMakeFiles/Sudoku.dir/game.cpp.i
 
-CMakeFiles/Sudoku.dir/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/functions.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/functions.cpp -o CMakeFiles/Sudoku.dir/functions.cpp.s
+CMakeFiles/Sudoku.dir/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/game.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/game.cpp -o CMakeFiles/Sudoku.dir/game.cpp.s
+
+CMakeFiles/Sudoku.dir/TextureManager.cpp.o: CMakeFiles/Sudoku.dir/flags.make
+CMakeFiles/Sudoku.dir/TextureManager.cpp.o: ../TextureManager.cpp
+CMakeFiles/Sudoku.dir/TextureManager.cpp.o: CMakeFiles/Sudoku.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sudoku.dir/TextureManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sudoku.dir/TextureManager.cpp.o -MF CMakeFiles/Sudoku.dir/TextureManager.cpp.o.d -o CMakeFiles/Sudoku.dir/TextureManager.cpp.o -c /home/psiembab/Desktop/bmwe36/Sudoku/TextureManager.cpp
+
+CMakeFiles/Sudoku.dir/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sudoku.dir/TextureManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/psiembab/Desktop/bmwe36/Sudoku/TextureManager.cpp > CMakeFiles/Sudoku.dir/TextureManager.cpp.i
+
+CMakeFiles/Sudoku.dir/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sudoku.dir/TextureManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/psiembab/Desktop/bmwe36/Sudoku/TextureManager.cpp -o CMakeFiles/Sudoku.dir/TextureManager.cpp.s
 
 # Object files for target Sudoku
 Sudoku_OBJECTS = \
 "CMakeFiles/Sudoku.dir/main.cpp.o" \
-"CMakeFiles/Sudoku.dir/functions.cpp.o"
+"CMakeFiles/Sudoku.dir/game.cpp.o" \
+"CMakeFiles/Sudoku.dir/TextureManager.cpp.o"
 
 # External object files for target Sudoku
 Sudoku_EXTERNAL_OBJECTS =
 
 Sudoku: CMakeFiles/Sudoku.dir/main.cpp.o
-Sudoku: CMakeFiles/Sudoku.dir/functions.cpp.o
+Sudoku: CMakeFiles/Sudoku.dir/game.cpp.o
+Sudoku: CMakeFiles/Sudoku.dir/TextureManager.cpp.o
 Sudoku: CMakeFiles/Sudoku.dir/build.make
 Sudoku: CMakeFiles/Sudoku.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Sudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Sudoku"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sudoku.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

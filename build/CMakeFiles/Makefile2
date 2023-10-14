@@ -81,12 +81,12 @@ clean: CMakeFiles/Sudoku.dir/clean
 CMakeFiles/Sudoku.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=1,2,3 "Built target Sudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles --progress-num=1,2,3,4 "Built target Sudoku"
 .PHONY : CMakeFiles/Sudoku.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sudoku.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Sudoku.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/psiembab/Desktop/bmwe36/Sudoku/build/CMakeFiles 0
 .PHONY : CMakeFiles/Sudoku.dir/rule
